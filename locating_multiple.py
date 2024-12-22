@@ -5,7 +5,8 @@ import time
 
 driver = webdriver.Chrome()
 query ="smartphone"
-driver.get(f"https://www.flipkart.com/search?q={query}&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off")
+page=1
+driver.get(f"https://www.flipkart.com/search?q={query}&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page={page}")
 elems = driver.find_elements(By.CLASS_NAME,"col-7-12" )
 print("Number of elements:"+{len(elems)})
 for elem in elems:
