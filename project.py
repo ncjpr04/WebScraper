@@ -14,11 +14,10 @@ driver = webdriver.Chrome()
 query = "smartphone"
 file = 0
 idx=1
-# Open a CSV file for writing
+# Open a CSV file for writin
 with open('CSVs/product_data.csv', mode='w', newline='', encoding='utf-8') as csvfile:
     fieldnames = ['S no.', 'Title', 'Price', 'Product Link']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
     # Write the header to the CSV file
     writer.writeheader()
 
