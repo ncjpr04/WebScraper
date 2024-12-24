@@ -15,7 +15,7 @@ query = "smartphone"
 file = 0
 idx=1
 # Open a CSV file for writing
-with open('product_data.csv', mode='w', newline='', encoding='utf-8') as csvfile:
+with open('CSVs/product_data.csv', mode='w', newline='', encoding='utf-8') as csvfile:
     fieldnames = ['S no.', 'Title', 'Price', 'Product Link']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
