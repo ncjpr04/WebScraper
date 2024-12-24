@@ -25,7 +25,7 @@ with open('CSVs/product_data.csv', mode='w', newline='', encoding='utf-8') as cs
         # Open the Flipkart search results page
         driver.get(f"https://www.flipkart.com/search?q={query}&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page={i}")
         
-        # Find all product elements
+        # Find all product elemen
         elems = driver.find_elements(By.CLASS_NAME, "tUxRFH")
         print(f"Number of elements: {len(elems)}")
        
