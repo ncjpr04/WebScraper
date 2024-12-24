@@ -3,4 +3,5 @@ venv/
 .venv/
 data/
 .data/
-product_data.csv
+CSVs/
+.CSVs/
